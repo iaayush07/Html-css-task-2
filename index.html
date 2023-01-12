@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container d-flex flex-column">
+    <header class="d-flex justify-between">
+      <div class="d-flex justify-between">
+        <a href="">
+          <img src="assets/images/logo.svg" alt="snap logo">
+        </a>
+        <nav>
+          <ul class="d-flex">
+            <li class="feature dropdown">
+              Features
+              <img src="assets/images/icon-arrow-down.svg" alt="">
+              <div class="bg-white dropdown-content">
+                <ul>
+                  <li>
+                    <a href="">
+                      <img src="assets/images/icon-todo.svg" alt="">
+                      Todo List
+                    </a> 
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="assets/images/icon-calendar.svg" alt="">
+                      Calander
+                    </a> 
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="assets/images/icon-reminders.svg" alt="">
+                      Reminder
+                    </a> 
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="assets/images/icon-planning.svg" alt="">\
+                      Planning
+                    </a> 
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="company dropdown ps-30">
+              Company
+              <img src="assets/images/icon-arrow-down.svg" alt="">
+              <div class="bg-white dropdown-content">
+                <ul>
+                  <li>
+                    <a href="">
+                      Hitory
+                    </a> 
+                  </li>
+                  <li>
+                    <a href="">
+                      Our team
+                    </a> 
+                  </li>
+                  <li>
+                    <a href="">
+                      Blog
+                    </a> 
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="ps-30">
+              Careers
+            </li>
+            <li class="ps-30">
+              About
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <a href="" class="text-secondary">
+          Login
+        </a>
+        <a href="" class="text-secondary btn-register">
+          Register
+        </a>
+      </div>
+    </header>
+    <main class="d-flex flex-grow-1">
+      <section class="details d-flex flex-column justify-between pe-40">
+        <h1>
+          Make <br> remote work
+        </h1>
+        <p class="text-secondary">
+          Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.
+        </p>
+        <div>
+          <a href="" class="text-secondary btn-register">
+            Learn more
+          </a>
+        </div>
+        <div>
+          <img  src="assets/images/client-databiz.svg" alt="databiz"> 
+          <img  src="assets/images/client-audiophile.svg" alt="audio phile"> 
+          <img  src="assets/images/client-meet.svg" alt="meet"> 
+          <img  src="assets/images/client-maker.svg" alt="maker"> 
+        </div>
+      </section>
+      <section class="img-wrapper ps-40">
+          <img src="assets/images/image-hero-desktop.png" alt="" class="img">
+      </section>
+    </main>
+  </div>
+</body>
+</html>
