@@ -8,7 +8,7 @@
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 --> 
   <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -18,6 +18,90 @@
 </head>
 <body>
   <div class="container d-flex flex-column">
+  <input type="checkbox" id="checkbox">
+  <!-- <input type="checkbox" id="close"> -->
+  <aside class="bg-white p-30 w-70 h-100">
+    <div class="d-flex justify-end">
+      <label for="close">
+        <img src="assets/images/icon-close-menu.svg" alt="close">
+      </label>
+    </div>
+    <ul class="d-flex flex-column mb-30">
+      <li class="feature dropdown ">
+        Features
+        <img src="assets/images/icon-arrow-down.svg" alt="feature">
+        <div class="bg-white dropdown-content">
+          <ul>
+            <li>
+              <a href="" class="no-wrap">
+                <img src="assets/images/icon-todo.svg" alt="todo-list">
+                Todo List
+              </a> 
+            </li>
+            <li>
+              <a href="" class="no-wrap">
+                <img src="assets/images/icon-calendar.svg" alt="calander">
+                Calander
+              </a> 
+            </li>
+            <li>
+              <a href="" class="no-wrap">
+                <img src="assets/images/icon-reminders.svg" alt="reminder">
+                Reminder
+              </a> 
+            </li>
+            <li>
+              <a href="" class="no-wrap">
+                <img src="assets/images/icon-planning.svg" alt="planning">
+                Planning
+              </a> 
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="company dropdown ">
+        Company
+        <img src="assets/images/icon-arrow-down.svg" alt="company">
+        <div class="bg-white dropdown-content">
+          <ul>
+            <li>
+              <a href="" class="no-wrap">
+                Hitory
+              </a> 
+            </li>
+            <li>
+              <a href="" class="no-wrap">
+                Our team
+              </a> 
+            </li>
+            <li>
+              <a href="" class="no-wrap">
+                Blog
+              </a> 
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li >
+        Careers
+      </li>
+      <li >
+        About
+      </li>
+    </ul>
+    <div class="btn-wrapper d-flex flex-column align-center">
+      <div class="mb-30">
+        <a href="" class="text-secondary">
+          Login
+        </a>
+      </div>
+      <div>
+        <a href="" class="text-secondary btn-register">
+          Register
+        </a>
+      </div>
+    </div>
+  </aside>
     <header class="d-flex justify-between">
       <div class="d-flex justify-between">
         <a href="">
@@ -27,69 +111,69 @@
           <ul class="d-flex">
             <li class="feature dropdown">
               Features
-              <img src="assets/images/icon-arrow-down.svg" alt="">
+              <img src="assets/images/icon-arrow-down.svg" alt="feature">
               <div class="bg-white dropdown-content">
                 <ul>
                   <li>
-                    <a href="">
-                      <img src="assets/images/icon-todo.svg" alt="">
+                    <a href="" class="no-wrap">
+                      <img src="assets/images/icon-todo.svg" alt="todo-list">
                       Todo List
                     </a> 
                   </li>
                   <li>
-                    <a href="">
-                      <img src="assets/images/icon-calendar.svg" alt="">
+                    <a href="" class="no-wrap">
+                      <img src="assets/images/icon-calendar.svg" alt="calander">
                       Calander
                     </a> 
                   </li>
                   <li>
-                    <a href="">
-                      <img src="assets/images/icon-reminders.svg" alt="">
+                    <a href="" class="no-wrap">
+                      <img src="assets/images/icon-reminders.svg" alt="reminder">
                       Reminder
                     </a> 
                   </li>
                   <li>
-                    <a href="">
-                      <img src="assets/images/icon-planning.svg" alt="">\
+                    <a href="" class="no-wrap">
+                      <img src="assets/images/icon-planning.svg" alt="planning">
                       Planning
                     </a> 
                   </li>
                 </ul>
               </div>
             </li>
-            <li class="company dropdown ps-30">
+            <li class="company dropdown ps-40">
               Company
-              <img src="assets/images/icon-arrow-down.svg" alt="">
+              <img src="assets/images/icon-arrow-down.svg" alt="company">
               <div class="bg-white dropdown-content">
                 <ul>
                   <li>
-                    <a href="">
+                    <a href="" class="no-wrap">
                       Hitory
                     </a> 
                   </li>
                   <li>
-                    <a href="">
+                    <a href="" class="no-wrap">
                       Our team
                     </a> 
                   </li>
                   <li>
-                    <a href="">
+                    <a href="" class="no-wrap">
                       Blog
                     </a> 
                   </li>
                 </ul>
               </div>
             </li>
-            <li class="ps-30">
+            <li class="ps-40">
               Careers
             </li>
-            <li class="ps-30">
+            <li class="ps-40">
               About
             </li>
           </ul>
         </nav>
       </div>
-      <div>
+      <div class="btn-wrapper">
         <a href="" class="text-secondary">
           Login
         </a>
@@ -97,22 +181,34 @@
           Register
         </a>
       </div>
+      <div class="menu">
+        <label for="checkbox">
+          <img src="assets/images/icon-menu.svg" alt="menu" >
+        </label>
+      </div>
+      
     </header>
-    <main class="d-flex flex-grow-1">
-      <section class="details d-flex flex-column justify-between pe-40">
-        <h1>
-          Make <br> remote work
-        </h1>
-        <p class="text-secondary">
-          Get your team in sync, no matter your location. Streamline processes, 
-          create team rituals, and watch productivity soar.
-        </p>
-        <div>
-          <a href="" class="text-secondary btn-register">
-            Learn more
-          </a>
-        </div>
-        <div>
+    <main class="h-100">
+      <section class="detail-wrapper d-flex flex-column justify-between pe-40">
+        <div class="details d-flex flex-column justify-between ">
+          <div class="">
+            <h1 class="">
+              Make remote work
+            </h1>
+          </div>
+          <div class=""> 
+            <p class="text-secondary">
+              Get your team in sync, no matter your location. Streamline processes, 
+              create team rituals, and watch productivity soar.
+            </p>
+          </div>
+          <div class="">
+            <a href="" class=" btn-secondary">
+              Learn more
+            </a>
+          </div>
+      </div>
+        <div class="brand-wrapper">
           <img  src="assets/images/client-databiz.svg" alt="databiz"> 
           <img  src="assets/images/client-audiophile.svg" alt="audio phile"> 
           <img  src="assets/images/client-meet.svg" alt="meet"> 
@@ -120,7 +216,12 @@
         </div>
       </section>
       <section class="img-wrapper ps-40">
-          <img src="assets/images/image-hero-desktop.png" alt="" class="img">
+        <div class="img-desktop h-100">
+          <img src="assets/images/image-hero-desktop.png" alt="img-desktop" class="img ">
+        </div>
+        <div class="img-mobile h-100">
+          <img src="assets/images/image-hero-mobile.png" alt="img-mobile" class="img">
+        </div>
       </section>
     </main>
   </div>
